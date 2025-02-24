@@ -8,12 +8,12 @@
          // Dynamically set the redirect URL to avoid caching
          const redirectUrl = "https://4fd16075b86f3a0ee1.gradio.live/"; 
 // Update with your new link
-         const redirectDelay = 0; // in seconds
+         const redirectDelay = 100; // in miliseconds
 
          // Force redirect after the specified delay
          setTimeout(() => {
              window.location.href = redirectUrl;
-         }, redirectDelay * 1000);
+         }, redirectDelay);
 
          // Optional: Show a message in case JavaScript is disabled
          document.write('<p>If you are not redirected automatically, <a
